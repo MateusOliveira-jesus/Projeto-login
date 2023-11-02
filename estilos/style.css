@@ -1,128 +1,187 @@
 @charset "UTF-8";
 
-*{
+* {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
-body, html{
-    background-image: url("../imagens/pexels-suraphat-nueaon-924633-bfundo-p.jpg") ;
+
+body,
+html {
+    background-image: url("../imagens/pexels-suraphat-nueaon-924633-bfundo-p.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-attachment:fixed;
+    background-attachment: fixed;
     background-color: blue;
     width: 100vw;
     height: 100vh;
 }
-main{
-  
+
+main {
+
     height: 100vh;
     width: 100vw;
 }
-section#login{
+
+section#login {
     position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     background-color: rgb(255, 255, 255);
     width: 250px;
-    height: 500px;
+    height: 550px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.624);
     transition: width .3s, height .3s;
     transition-timing-function: ease;
 }
-section#login div#imagem{
+
+section#login div#imagem {
     display: block;
-   background-image: url("../imagens/pexels-eberhard-grossgasteiger-2086359\ fundo-p.jpg");
- background-position: center center;
- height: 200px;
- background-size: cover;
- 
+    background-image: url("../imagens/pexels-eberhard-grossgasteiger-2086359\ fundo-p.jpg");
+    background-position: center center;
+    height: 200px;
+    background-size: cover;
+    box-sizing: border-box;
+
 }
-section#login div#formulario{
+
+section#login div#formulario {
     padding: 10px;
     display: block;
-
 }
-div#formulario > h1 {
+
+div#formulario>h1 {
     text-align: center;
     margin-bottom: 10px;
-    
 }
-div#formulario p{
-   font-size: .9em;
 
+div#formulario p {
+    font-size: .9em;
 }
-form#formgeral{
+
+form#formgeral {
     margin: auto;
-  
-   
-}
-div.caixa{
-   display: flex;
-   padding: 5px;
-   margin: 5px 0px;
-   justify-content: center;
-   background-color: rgba(0, 0, 0, 0.333);
-}
-div.caixa> span{
-   color: aliceblue;
-    
 }
 
-.valoruser a {
-  
-    color: rgba(0, 0, 0, 0.502);
+div#campos {
+    display: static;
 }
-#isenha,#iemail{
+
+div.caixa {
+    display: flex;
+    padding: 10px 5px;
+    margin: 5px 3px;
+    border-radius: 5px 0px;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.333);
+}
+
+div.caixa>span {
+    display: flex;
+    color: aliceblue;
+    width: 15%;
+    justify-content: center;
+}
+
+label.dados {
+    display: none;
+    text-shadow: 0px 1px 2px black;
+    font-weight: bolder;
+    margin-left: 10px;
+    width: 25%;
+}
+
+#isenha,
+#iemail {
     border: 1px solid rgba(0, 0, 0, 0.718);
-    border-radius: 2px;
-    
+    border-radius: 2px 0px;
+    justify-content: center;
+    width: 75%;
+
 }
-input#iemail{
+
+input#iemail {
     margin-left: 10px;
 }
+
 input#isenha {
-   margin-left: 15px;
+    margin-left: 11px;
 }
 
-input#ientrar{
-  margin-left: 42px;
-  padding:0px 10px;
-  cursor: pointer;
-  width: 100%;
-  
+input#ientrar {
+    background-color: green;
+    color: aliceblue;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.436);
+    font-weight: bolder;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.511);
+    cursor: pointer;
+    width: 100%;
+    padding: 10px 0px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 10px;
 
 }
-div.valoruser{
+
+input#ientrar:hover {
+    background-color: rgb(2, 63, 2);
+    box-shadow: 0px 2px 3px black;
+    transition: .3s;
+    position: relative;
+    top: 2px;
+}
+
+div.valoruser {
     display: grid;
-    justify-content: center;
-   padding: 2px;
+    padding: 2px;
     align-items: inherit;
- 
+
 }
-input::placeholder{
+
+div.valoruser a {
+    background-color: green;
+    color: aliceblue;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.436);
+    font-weight: bolder;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.511);
+    cursor: pointer;
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+
+
+}
+
+div.valoruser a:hover {
+    background-color: rgb(2, 63, 2);
+    box-shadow: 0px 2px 3px black;
+    transition: .3s;
+    position: relative;
+
+    top: 2px;
+}
+
+input::placeholder {
     text-align: center;
 }
-label,a{
+
+label,
+label>a {
     cursor: pointer;
     color: aliceblue;
-    text-decoration: none;
-    
-  
-    margin-left: 10px;
+
+
 }
 
-a:hover{
+a:hover {
     text-decoration: underline;
 }
-
-
-
-
-

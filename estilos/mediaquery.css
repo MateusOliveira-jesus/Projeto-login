@@ -18,6 +18,7 @@
     section#login {
         width: 70vw;
         display: static;
+        height: 70vh;
 
     }
 
@@ -27,6 +28,9 @@
         float: right;
         width: 40%;
         height: 100%;
+    }
+    div.caixa span{
+        font-size: 2em;
     }
 
     label.dados {
@@ -42,11 +46,11 @@
     }
 
     input#ientrar {
-        padding: 20px;
+        padding: 15px;
     }
 
     div.valoruser a {
-        padding: 15px;
+        padding: 10px;
     }
 
     input#ientrar {
@@ -69,7 +73,7 @@
     }
 
     div.caixa {
-        padding: 30px;
+        padding: 20px;
         margin: 10px 2px;
         margin-left: 2px;
     }
@@ -112,6 +116,9 @@
         float: right;
         width: 50%;
 
+    }
+    div.caixa span{
+        font-size: 1.2em;
     }
 
     div.caixa {
